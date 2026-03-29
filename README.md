@@ -2,7 +2,7 @@
 
 # 🔥 XGBRegressor Calories Burnt Prediction
 
-### *Predicting How Many Calories You Burn — Powered by Gradient Boosting Magic* ✨
+### *Predicting How Many Calories You Burn - Powered by Gradient Boosting Magic* ✨
 
 <br>
 
@@ -76,9 +76,9 @@
 
 ## 🎯 What Is This Project?
 
-This project uses the **XGBoost Regressor** — the gold standard of gradient boosting algorithms — to **predict the exact number of calories a person burns** during a workout session, based on their physiological measurements and exercise data.
+This project uses the **XGBoost Regressor** - the gold standard of gradient boosting algorithms - to **predict the exact number of calories a person burns** during a workout session, based on their physiological measurements and exercise data.
 
-> 💡 Unlike classification (yes/no answers), this is a **Regression** problem — the model predicts a **continuous numerical value** (calories burned).
+> 💡 Unlike classification (yes/no answers), this is a **Regression** problem - the model predicts a **continuous numerical value** (calories burned).
 
 **The Core Prediction Question:**
 
@@ -91,7 +91,7 @@ This project uses the **XGBoost Regressor** — the gold standard of gradient bo
 
 ## ✨ Features
 
-> Everything this project brings to the table — from data to deployment-ready insights:
+> Everything this project brings to the table - from data to deployment-ready insights:
 
 ```
 🔥  PREDICTION POWER
@@ -129,7 +129,7 @@ This project uses the **XGBoost Regressor** — the gold standard of gradient bo
 
 ---
 
-## 📊 Dataset Deep Dive — Two Files, One Powerful Dataset
+## 📊 Dataset Deep Dive - Two Files, One Powerful Dataset
 
 This project uniquely uses **two separate CSV files** that are merged into a single DataFrame:
 
@@ -150,7 +150,7 @@ This project uniquely uses **two separate CSV files** that are merged into a sin
 
 </div>
 
-### 📋 File 2 — `calories.csv` (Target Variable)
+### 📋 File 2 - `calories.csv` (Target Variable)
 
 | 🔢 Column | 📋 Description | 🎯 Role |
 |:---|:---|:---:|
@@ -163,16 +163,16 @@ This project uniquely uses **two separate CSV files** that are merged into a sin
 
 ```
 📦 Merged Dataset — calories_data
-├── 🗃️  Total Records          →  15,000 rows
-├── 📐  Total Features          →  9 columns (8 input + 1 target)
-├── 👩  Female Participants     →  7,553  (50.4%)
-├── 👨  Male Participants       →  7,447  (49.6%)
-├── 📅  Age Range               →  20 – 79 years
-├── 💓  Heart Rate Range        →  67 – 128 bpm
-├── 🌡️  Body Temp Range         →  37.1°C – 41.5°C
-├── 🔥  Calories Min            →  1 calorie
-├── 🔥  Calories Max            →  314 calories
-└── 🔥  Calories Mean           →  ~89.5 calories
+├── 🗃️  Total Records          ->  15,000 rows
+├── 📐  Total Features          ->  9 columns (8 input + 1 target)
+├── 👩  Female Participants     ->  7,553  (50.4%)
+├── 👨  Male Participants       ->  7,447  (49.6%)
+├── 📅  Age Range               ->  20 – 79 years
+├── 💓  Heart Rate Range        ->  67 – 128 bpm
+├── 🌡️  Body Temp Range         ->  37.1°C – 41.5°C
+├── 🔥  Calories Min            ->  1 calorie
+├── 🔥  Calories Max            ->  314 calories
+└── 🔥  Calories Mean           ->  ~89.5 calories
 ```
 
 ---
@@ -182,27 +182,27 @@ This project uniquely uses **two separate CSV files** that are merged into a sin
 ```
 ┌────────────────────────────────────────────────────────────────────┐
 │                                                                    │
-│  📥  LOAD DATA          →   Read exercise.csv + calories.csv       │
+│  📥  LOAD DATA          -   Read exercise.csv + calories.csv       │
 │         ↓                                                          │
-│  🔗  MERGE DATASETS     →   pd.concat() on User_ID axis           │
+│  🔗  MERGE DATASETS     -   pd.concat() on User_ID axis           │
 │         ↓                                                          │
-│  🔍  EDA                →   Shape, Info, Nulls, Duplicates         │
+│  🔍  EDA                -   Shape, Info, Nulls, Duplicates         │
 │         ↓                                                          │
-│  📊  UNIVARIATE         →   Histograms, Boxplots, Countplot        │
+│  📊  UNIVARIATE         -   Histograms, Boxplots, Countplot        │
 │         ↓                                                          │
-│  📈  BIVARIATE          →   Scatterplots + Correlation Matrix      │
+│  📈  BIVARIATE          -   Scatterplots + Correlation Matrix      │
 │         ↓                                                          │
-│  🛠️  FEATURE ENG.       →   Encode Gender (male→0, female→1)      │
+│  🛠️  FEATURE ENG.       -   Encode Gender (male→0, female→1)      │
 │         ↓                                                          │
-│  ✂️  FEATURE SELECTION  →   Drop User_ID, isolate Calories         │
+│  ✂️  FEATURE SELECTION  -   Drop User_ID, isolate Calories         │
 │         ↓                                                          │
-│  🔀  TRAIN-TEST SPLIT   →   80% Train | 20% Test                  │
+│  🔀  TRAIN-TEST SPLIT   -   80% Train | 20% Test                  │
 │         ↓                                                          │
-│  🚀  XGBRegressor       →   Gradient Boosted Trees                 │
+│  🚀  XGBRegressor       -   Gradient Boosted Trees                 │
 │         ↓                                                          │
-│  📉  EVALUATE           →   Mean Absolute Error (MAE)              │
+│  📉  EVALUATE           -   Mean Absolute Error (MAE)              │
 │         ↓                                                          │
-│  ✅  RESULT             →   MAE ≈ 1.5 Calories 🔥                  │
+│  ✅  RESULT             -   MAE ≈ 1.5 Calories 🔥                  │
 │                                                                    │
 └────────────────────────────────────────────────────────────────────┘
 ```
@@ -212,7 +212,7 @@ This project uniquely uses **two separate CSV files** that are merged into a sin
 ## 🧪 Step-by-Step Notebook Breakdown
 
 <details>
-<summary><b>📦 Step 1 — Importing Libraries</b> 🖱️ click to expand</summary>
+<summary><b>📦 Step 1 - Importing Libraries</b> 🖱️ click to expand</summary>
 <br>
 
 ```python
@@ -225,14 +225,14 @@ from xgboost import XGBRegressor
 from sklearn import metrics
 ```
 
-> ⚡ `xgboost` is imported as a standalone package — it's not bundled with scikit-learn. Install it separately with `pip install xgboost`.
+> ⚡ `xgboost` is imported as a standalone package - it's not bundled with scikit-learn. Install it separately with `pip install xgboost`.
 
 </details>
 
 ---
 
 <details>
-<summary><b>🔗 Step 2 — Loading & Merging the Two Datasets</b> 🖱️ click to expand</summary>
+<summary><b>🔗 Step 2 - Loading & Merging the Two Datasets</b> 🖱️ click to expand</summary>
 <br>
 
 ```python
@@ -310,12 +310,12 @@ calories_data[['Age', 'Height']].corr()
 ---
 
 <details>
-<summary><b>🛠️ Step 5 — Feature Engineering</b> 🖱️ click to expand</summary>
+<summary><b>🛠️ Step 5 - Feature Engineering</b> 🖱️ click to expand</summary>
 <br>
 
 **🔹 Encoding Categorical Variable (Gender)**
 
-XGBoost requires numerical input — text labels were mapped to binary integers:
+XGBoost requires numerical input - text labels were mapped to binary integers:
 
 ```python
 calories_data.replace({"Gender": {'male': 0, 'female': 1}}, inplace=True)
@@ -343,7 +343,7 @@ Y = calories_data['Calories']
 ---
 
 <details>
-<summary><b>🔀 Step 6 — Train-Test Split</b> 🖱️ click to expand</summary>
+<summary><b>🔀 Step 6 - Train-Test Split</b> 🖱️ click to expand</summary>
 <br>
 
 ```python
@@ -358,7 +358,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(
 └── 🧪  Testing Set    →   3,000 samples  (20%)
 ```
 
-> 🎲 `random_state=2` ensures the same split every run — fully reproducible results!
+> 🎲 `random_state=2` ensures the same split every run - fully reproducible results!
 
 </details>
 
@@ -378,7 +378,7 @@ model = XGBRegressor()
 model.fit(X_train, Y_train)
 ```
 
-> ⚡ XGBoost internally builds an **ensemble of decision trees**, each one correcting the errors of the previous — that's the "boosting" in Gradient Boosting!
+> ⚡ XGBoost internally builds an **ensemble of decision trees**, each one correcting the errors of the previous - that's the "boosting" in Gradient Boosting!
 
 | ⚙️ Parameter | 🔧 Default Value | 💡 Meaning |
 |:---|:---|:---|
@@ -517,8 +517,8 @@ jupyter
 | 📄 File | 📋 What's Inside |
 |:---|:---|
 | `Gradient_Boosting_Linear_Regression_Project_-_Calories_Burnt_Prediction.ipynb` | Full pipeline: Load → Merge → EDA → Feature Engineering → XGBoost Training → MAE Evaluation (55 cells) |
-| `exercise.csv` | 15,000 rows of physiological & exercise data — Gender, Age, Height, Weight, Duration, Heart Rate, Body Temp |
-| `calories.csv` | 15,000 rows of actual calories burned — the prediction target |
+| `exercise.csv` | 15,000 rows of physiological & exercise data - Gender, Age, Height, Weight, Duration, Heart Rate, Body Temp |
+| `calories.csv` | 15,000 rows of actual calories burned - the prediction target |
 
 ---
 
@@ -526,15 +526,15 @@ jupyter
 
 <div align="center">
 
-> ⌚ **Fitness Wearables** (Apple Watch, Fitbit) — calorie estimation from heart rate + movement
+> ⌚ **Fitness Wearables** (Apple Watch, Fitbit) - calorie estimation from heart rate + movement
 >
-> 🏥 **Clinical Nutrition** — prescribed calorie burn for weight management programs
+> 🏥 **Clinical Nutrition** - prescribed calorie burn for weight management programs
 >
-> 🏟️ **Sports Science** — athlete performance & recovery optimization
+> 🏟️ **Sports Science** - athlete performance & recovery optimization
 >
-> 📱 **Health Apps** — personalized workout recommendations based on predicted burn
+> 📱 **Health Apps** - personalized workout recommendations based on predicted burn
 >
-> 🤖 **AI Personal Trainers** — dynamically adjust workouts to hit calorie targets
+> 🤖 **AI Personal Trainers** - dynamically adjust workouts to hit calorie targets
 
 </div>
 
@@ -544,12 +544,12 @@ jupyter
 
 ```
 ✅  Two CSVs seamlessly merged into one powerful dataset
-✅  15,000 records — large enough for robust generalization
-✅  Clean data — zero nulls, zero duplicates right out of the box
+✅  15,000 records - large enough for robust generalization
+✅  Clean data - zero nulls, zero duplicates right out of the box
 ✅  XGBoost achieves a remarkable MAE of ~1.5 calories with default params
-✅  Only 6 features needed — lean, interpretable, and highly efficient
-✅  Regression pipeline — predicts continuous values, not binary classes
-✅  No feature scaling required — XGBoost is tree-based & scale-invariant 🌳
+✅  Only 6 features needed - lean, interpretable, and highly efficient
+✅  Regression pipeline - predicts continuous values, not binary classes
+✅  No feature scaling required - XGBoost is tree-based & scale-invariant 🌳
 ✅  Fully reproducible with fixed random_state=2
 ```
 
